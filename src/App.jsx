@@ -116,17 +116,17 @@ function App() {
         </p>
       </header>
       <main>
-        {/* {error && <Error title="An error occured" message={error.message} />} */}
-        {/* {!error && ( */}
+         {error && <Error title="An error occured" message={error.message} />} 
+         {!error && ( 
           <Places
             title="I'd like to visit ..."
             fallbackText="Select the places you would like to visit below."
-            loadingText={isFetching}
-            isLoading="Fetching your places..."
+            loadingText="Fetching your places..."
+            isLoading={isFetching}
             places={userPlaces}
             onSelectPlace={handleStartRemovePlace}
           />
-        {/* )} */}
+         )} 
 
         <AvailablePlaces onSelectPlace={handleSelectPlace} />
       </main>

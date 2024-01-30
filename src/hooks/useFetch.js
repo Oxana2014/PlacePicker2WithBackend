@@ -22,6 +22,7 @@ const [fetchedData, setFetchedData] = useState(initialValue)
       return {
         isFetching,
         error,
-        fetchedData
+        fetchedData,
+        setFetchedData
       }
 }
